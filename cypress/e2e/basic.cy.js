@@ -3,10 +3,6 @@ describe('sample test', () => {
     cy.visit('/')
   })
 
-  it('displays the resources text', () => {
-    cy.get('h1')
-    .contains('Under Construction...');
-  })
   it('renders the Netlify logo image', () => {
     cy.get('img')
     .should('be.visible')
